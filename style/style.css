@@ -1,0 +1,110 @@
+body, html {
+  height: 100%;
+}
+
+#form {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: gold;
+  color: white;
+}
+
+#form > div {
+  margin-bottom: 10px;
+}
+
+#form > div label {
+  width: 200px;
+}
+
+#form > div input {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  width: calc(100% - 220px);
+}
+
+#form > div input:focus {
+  background-color: rgb(210, 233, 247);
+}
+
+.tabela {
+  margin: 0 auto;
+  overflow-y: auto
+}
+
+.table-header, .place {
+  margin: 0 auto;
+  min-width: 700px;
+}
+
+.button {
+  text-align: center
+}
+
+.createPDF {
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 auto;
+  padding: 10px 15px;
+  background-color: #f09b13;
+  border: none;
+  margin-top: 30px;
+  transition: 400ms;
+  outline: none;
+  cursor: pointer;
+}
+
+.createPDF:disabled {
+  background: #0cf7e8;
+  cursor: wait;
+}
+
+.createPDF:disabled:hover {
+  background: #0cf7e8;
+}
+
+.createPDF:hover {
+  background-color: #f07a13;
+}
+
+.table-header th, .table-header td  {
+  border: 1px solid black;
+}
+
+.deleteLine {
+  background: red;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-left: auto;
+  transition: 400ms;
+}
+
+.deleteLine:hover {
+  background-color: #870303;
+}
+
+.deleteLine i {
+  color: #fff;
+}
+
+.elements td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+  #form > div label {
+    display: block;
+  }
+
+  #form > div input {
+    width: 100%;
+  }
+}

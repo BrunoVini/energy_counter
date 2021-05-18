@@ -1,0 +1,24 @@
+body, html {
+  height: 100%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+} 
+
+.tabela {
+  margin: 0 auto;
+}
+
+.table-header, .place {
+  margin: 0 auto;
+  min-width: 700px;
+}
+
+.table-header th, .place td  {
+  border: 1px solid black;
+}
